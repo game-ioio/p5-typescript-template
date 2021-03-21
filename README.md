@@ -2,24 +2,20 @@
 
 This template is desinged to create mini games but you ca use it as you want
 
-### Demo
+## Demo
 
 ![rectable movement demo](/images/rectagle-demo.gif "Rectangle movement demo")
 
-### Bundle
+## Commands
 
-```
-npm run build
-```
+### Install
 
-or
-
-```
-yarn build
-```
+`npm i` or `yarn`
 
 ### Development server
 
-```bash
-yarn dev
-```
+`npm run dev` or `yarn dev`
+
+### Bundle
+
+`npm run build` or `yarn build`
