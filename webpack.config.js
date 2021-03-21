@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -14,9 +15,7 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({ filename:'main.[contenthash].css' }),
-    new HtmlWebpackPlugin({
-              template: 'index.html'
-            })
+    new HtmlWebpackPlugin({ template: 'src/index.html' })
   ],
 
   module: {
@@ -47,7 +46,12 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
+    plugins: [
+      new TsconfigPathsPlugin({
+        configFile: 'tsconfig.json'
+      })
+    ]
   },
 
   devServer: {

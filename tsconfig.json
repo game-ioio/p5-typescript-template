@@ -4,7 +4,13 @@
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": "./src",
+    "paths": {
+      "Framework/*": ["./framework"],
+      "Src/*": ["./"],
+      "Style/*": ["./style"]
+    }
   },
   "files": [
     "src/index.ts"

@@ -1,8 +1,10 @@
-import BaseGame from './framework/base-game';
+import Canvas from "Framework/canvas";
 
-export default class Game extends BaseGame {
-    setup() {
-    }
-    draw() {
-    }
+export default class Game extends Canvas {
+  setup() { 
+    this.createCanvas(700,700);
+    this.background(100);
+  }
+
+  draw() { }
 }
