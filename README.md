@@ -1,6 +1,6 @@
-# 🚀 Welcome to your new awesome project!
+# P5.js + Typescript template
 
-This project has been created using **webpack scaffold**, you can now run
+This template is desinged to create mini games but you ca use it as you want
 
 ```
 npm run build
@@ -12,4 +12,4 @@ or
 yarn build
 ```
 
-to bundle your application
+to bundle
