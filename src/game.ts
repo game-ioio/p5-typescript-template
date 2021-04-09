@@ -10,8 +10,9 @@ export default class Game extends Canvas {
 
   setup() {
     this.createCanvas(Game.LENGTH, Game.LENGTH);
-    this.background(100);
     this.frameRate(60);
+
+    this.background(100);
     this.noStroke();
   }
 
